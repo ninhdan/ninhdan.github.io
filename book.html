@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+     <!--link css-->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/base.css">
+     <!--box icons-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .home{
+            background: url(img/italia.jpg);
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        .contact-left h2{
+            text-align:center ;
+            margin-bottom: 30px;
+            font-weight: 600;
+            
+        }
+        .contact-box{
+            flex: auto;
+        }
+        .contact-left{
+            flex-basis: 50%;
+            padding: 40px 60px;
+        }
+        .input-row{
+           display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .input-row .input-group{
+            flex-basis: 45%;
+        }
+
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding-bottom: 5px;
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px ;
+           
+        }
+
+        label{
+            margin-bottom:6px ;
+            display: block;
+            color:red;
+        }
+        button{
+            background: #818181;
+            width: 100px;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 20px;
+              
+        }
+
+        button:hover{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--logo-->
+            <a href="#" class="logo">Ferrari<span>Store</span></a>
+            <!--Nav list-->
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">BOOK</a></li>
+            </ul>
+            <!--Search icon-->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!--Search box-->
+           <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search here ..." pattern="[0-9a-zA-Z]" title="error">
+           </div>
+        </div>
+    </header>
+
+<!--home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <p><b>Headquarter</b></p>
+            <h1><span>Ferrari SpA,</span> <br>headquarters and<br> factory</h1>
+            <p><b>Via Abetone Inferiore n. 4, I-41053 Maranello (MO) <br><b>Phone: +39 0536 949111</b> </p>
+        </div>
+    </section>
+<div id="contact-box"></div>
+
+<!--Contact-->
+   <div class="contact-box container " id="contact-box">
+        <div class="contact-left">
+            <h2>Contact</h2>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label >Name</label>
+                        <input type="text" placeholder="Name..."  pattern="[A-Za-z]{8,30}" title="[a-z][A-Z] && 8->30 character">
+                    </div>
+                    <div class="input-group">
+                        <label >Phone</label>
+                        <input type="text" placeholder="Phone..." pattern="[0-9]{10}" title="[0-9] && 10 character">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label >Email</label>
+                        <input type="text" placeholder="Email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="error">
+                    </div>
+                    <div class="input-group">
+                        <label >Subject</label>
+                        <input type="text" placeholder="Product...">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Message Your...."></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+   </div>
+
+<!-- footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="img/ferrari-white-logo.png" alt=""></a>
+                <div class="social">
+                    <a href="https://www.facebook.com/Ferrari/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/ferrari"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/ferrari/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/user/ferrariworld"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="index.html">Home</a>
+                <a href="discover.html" class="">Auto</a>
+                <a href="about.html">About us</a>
+                <a href="book.html">Booking</a>
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="Privacy.html">Privacy</a>
+                <a href="RefundPolicy.html">Refund Policy</a>
+                <a href="Cookie.html">Cookie Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <i>ITALYA</i>
+                <i>UNITED STATES</i>
+                <i>GERMANY</i>
+            </div>
+        </div>
+    </section>
+
+<!--Copyright-->
+    <div class="copyright">
+        <p>Ferrari N.V. - Holding company - A company under Dutch law, having its official seat in Amsterdam, the Netherlands and its corporate address at</p>
+        <p>Via Abetone Inferiore No. 4, I-41053 Maranello (MO), Italy, registered with the Dutch trade register under number 64060977</p>
+        <br>
+        <p>Ferrari S.p.A. - A company under Italian law, having its registered office at Via Emilia Est No. 1163, Modena, Italy, Companies’ Register of Modena,</p>
+        <p>VAT and Tax number 00159560366 and share capital of Euro 20,260,000</p>
+        <br>
+        <p>&#169; Copyright 2022 - All rights reserved</p>
+        <br>
+        <h3>Nguyễn Hòa Ninh Đan - MSSV: DH 52007049 - D20-TH11</h3>
+    </div>
+    
+    <!--link js-->
+    <script src="js/main.js"></script>
+</body>
+</html>
